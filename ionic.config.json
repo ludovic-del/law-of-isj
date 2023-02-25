@@ -1,0 +1,7 @@
+{
+  "name": "law_cameroon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
