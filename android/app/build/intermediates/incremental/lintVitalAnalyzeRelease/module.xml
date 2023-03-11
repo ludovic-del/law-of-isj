@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="C:\Users\ludovic per\Desktop\travail\projet_rattrapage_mb\law_cameroon\android\app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    gradle="7.2.1"
+    buildFolder="build"
+    bootClassPath="C:\Android\Sdk\platforms\android-32\android.jar;C:\Android\Sdk\build-tools\30.0.3\core-lambda-stubs.jar"
+    javaSourceLevel="11"
+    compileTarget="android-32"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
