@@ -1,0 +1,7 @@
+{
+  "name": "law_isj",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
