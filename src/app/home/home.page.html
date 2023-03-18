@@ -1,20 +1,45 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
+  <ion-toolbar color="orange1">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      law isj
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" color="njaune">
+  <p class="ion-text-center">    <img src="./assets/camer1.png">
+  </p>
+  <div >
+    <ion-searchbar placeholder="recherche..." class="search"></ion-searchbar>
+  </div><br>
+  <h4 class="ion-text-center"><u>Que désirez vous?</u></h4>
+  <div id="pitou1">
+    <ion-grid>
+      <ion-row color="primary">
+        <ion-col class="pitou" [routerLink]="['cde-penal']" color="vert1">
+          <img src="./assets/codePenal.png">
+          <h2 class="ion-text-center">code pénal</h2>
+        </ion-col>
+        <ion-col class="pitou" [routerLink]="['cde-procedure']" color="vert1" >
+          <img src="./assets/code_p.png">
+          <h2 class="ion-text-center">procédure pénal</h2>
+        </ion-col>
+      </ion-row><br>
+      <ion-row color="primary">
+        <ion-col class="pitou"  [routerLink]="['constitut']" color="vert1">
+          <img src="./assets/constitution.png">
+          <h2 class="ion-text-center">constitution</h2>
+        </ion-col>
+        <ion-col class="pitou" [routerLink]="['juridiction']" color="vert1">
+          <img src="./assets/drapeau.png">
+          <h2 class="ion-text-center">juridiction</h2>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
+
+
 </ion-content>

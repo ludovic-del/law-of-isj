@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="orange1">
+    <ion-title class="ion-text-center">juridiction</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="njaune">
+  <ion-card [routerLink]="['cour-sup']">
+    <ion-card-header class="ion-text-center">
+      cour suprême
+    </ion-card-header>
+    <ion-card-content>
+      <img src="./assets/indexCS.jpg">
+      <p>Au Cameroun, la cour suprême est la plus haute juridiction en matière judiciaire, administrative et de jugement des comptes.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card [routerLink]="['parquet-g']">
+    <ion-card-header class="ion-text-center">
+      parquet général
+    </ion-card-header>
+    <ion-card-content>
+      <img src="./assets/cs1.png">
+      <p>Les magistrats du parquet sont placés sous la direction et le contrôle de leurs chefs hierarchiques et sous l'autorisation du garde des sceaux, ministre de la justice.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card [routerLink]="['tribunal-c']">
+    <ion-card-header class="ion-text-center">
+      tribunal criminel
+    </ion-card-header>
+    <ion-card-content>
+      <img src="./assets/TC.png">
+      <p>De l'abreviation TCS, c'est une <strong>voie de recours ouverte contre toute les décisions rendues en dernier ressort</strong> Et qui permet à la partie ayant perdu le procès de porter l'affaire devant la cour suprême.</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

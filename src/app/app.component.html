@@ -1,3 +1,57 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
+<ion-app >
+  <ion-split-pane contentId="main-content" >
+    <ion-menu contentId="main-content" menuId="pearl_side" class="bg_side" type="overlay" >
+      <ion-content color="njaune" >
+        <ion-menu-toggle auto-hide="false" >
+          <ion-item class="ion-text-center"  color="orange1">
+            <ion-label><strong>Menu</strong></ion-label>
+          </ion-item>
+          <ion-card>
+            <img src="./assets/poste.png">
+          </ion-card>
+            <ion-item [routerLink]="['home/cde-penal']"color="njaune" >
+              <ion-avatar>
+                <img src="./assets/codePenal.png">
+              </ion-avatar>
+              <ion-label class="ion-text-center">code penal</ion-label>
+            </ion-item>          
+            <ion-item [routerLink]="['home/cde-procedure']" color="njaune">
+              <ion-avatar>
+                <img src="./assets/code_p.png">
+              </ion-avatar>
+              <ion-label class="ion-text-center">code de procedure penal</ion-label>
+            </ion-item>                     
+            <ion-item [routerLink]="['home/constitut']"color="njaune" >
+              <ion-avatar>
+                <img src="./assets/images_ct.jpg">
+              </ion-avatar>
+              <ion-label class="ion-text-center">constitution</ion-label>
+            </ion-item>                               
+            <ion-item [routerLink]="['home/juridiction']" color="njaune">
+              <ion-avatar>
+                <img src="./assets/drapeau.png">
+              </ion-avatar>
+              <ion-label class="ion-text-center">juridiction</ion-label>
+            </ion-item>                                        
+        </ion-menu-toggle>
+      </ion-content>
+    </ion-menu>
+            <ion-router-outlet id="main-content"></ion-router-outlet>
+            <ion-tabs>
+              <ion-tab-bar color="orange1">
+                <ion-tab-button tab="home">
+                  <ion-icon name="home"></ion-icon>
+                  <ion-label>Acceuil</ion-label>
+                </ion-tab-button>      
+                <ion-tab-button tab="FAQ"[routerLink]="['home/faq']" >
+                  <ion-icon name="help-outline"></ion-icon>
+                  <ion-label>FAQ</ion-label>
+                </ion-tab-button>
+                <ion-tab-button tab="a-propos"[routerLink]="['home/apropos']" >
+                  <ion-icon name="information"></ion-icon>
+                  <ion-label>A propos</ion-label>
+                </ion-tab-button>
+              </ion-tab-bar>
+            </ion-tabs>
+  </ion-split-pane>
 </ion-app>
