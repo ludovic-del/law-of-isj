@@ -19,6 +19,9 @@ export class CdePenalPage  {
   donnees: any = []
   aline: any = []
   A = [0]
+  Al = ['']
+  k = 0
+
 
   constructor(public http:HttpClient) {
     this.readAPI("https://sheltered-headland-30754.herokuapp.com/codepenal/article").subscribe((data:any)=>{
@@ -30,6 +33,7 @@ export class CdePenalPage  {
         //console.log(i, 'taille: ', data.data[i].alineas.length);
         //this.aline[i]=data.data[i].alineas;
         if(data.data[i].alineas.length==0){
+          this.Al=['']
           this.aline[i]=[" "]
           console.log(i, 'conduit à un alinea vide');
         }
@@ -40,8 +44,12 @@ export class CdePenalPage  {
             //this.aline[i].push(data.data[i].alineas[j].libelle);
             //this.aline[i]=data.data[i].alineas[j].libelle
             //console.log(i, ' ligne: ', data.data[i].alineas[j].libelle);
-            this.aline[i]=data.data[i].alineas[j].libelle;
+            this.k=parseInt(j)+1
+            this.Al.push(' ('+ this.k.toString() +') '+ data.data[i].alineas[j].libelle)
+            //this.aline[i][j]=data.data[i].alineas[j].libelle;
           }
+          this.Al.shift()
+          this.aline[i]=this.Al
           console.log(i, 'ligne: ', this.aline[i]);
         }
       }

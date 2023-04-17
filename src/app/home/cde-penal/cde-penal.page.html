@@ -15,10 +15,13 @@
     <ion-searchbar placeholder="recherche..."></ion-searchbar>
   </div>
   <div></div>
-  <h2 class="ion-text-center" *ngFor="let num of A">
-    <b>{{donnees[num]}}</b>
-    <p>{{aline[num]}}</p>
-  </h2>
+  <div>
+    <h2 class="ion-text-center" *ngFor="let num of A">
+      <b><u>{{donnees[num]}}</u></b>
+      <p>{{aline[num]}}</p>
+      <!--p *ngFor="let nb of [0,1,2,3]">{{aline[num][nb].libelle}}</p-->
+    </h2>
+  </div>
   <!--ul>
     <li *ngFor="let num of Data">{{donnees[num]}}</li>
   </ul-->
