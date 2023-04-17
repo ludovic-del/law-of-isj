@@ -14,7 +14,15 @@
   <div id="search">
     <ion-searchbar placeholder="recherche..."></ion-searchbar>
   </div>
-  <div class="icon">
-    <ion-icon name="add-circle-outline"></ion-icon>
-  </div>
+  <div></div>
+  <h2 class="ion-text-center" *ngFor="let num of A">
+    <b>{{donnees[num]}}</b>
+    <p>{{aline[num]}}</p>
+  </h2>
+  <!--ul>
+    <li *ngFor="let num of Data">{{donnees[num]}}</li>
+  </ul-->
+  <p>{{cdpData.alineas}}</p>
+
+
 </ion-content>
